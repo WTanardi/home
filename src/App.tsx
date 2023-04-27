@@ -89,6 +89,7 @@ const App: React.FC = () => {
   const typingRef17 = React.useRef<HTMLSpanElement>(null);
   const typingRef18 = React.useRef<HTMLSpanElement>(null);
   const typingRef19 = React.useRef<HTMLSpanElement>(null);
+  const typingRef20 = React.useRef<HTMLSpanElement>(null);
 
   const intersecting = useIntersectionObserver(
     [
@@ -111,6 +112,7 @@ const App: React.FC = () => {
       typingRef17,
       typingRef18,
       typingRef19,
+      typingRef20,
     ],
     {
       threshold: 0.3,
@@ -118,6 +120,7 @@ const App: React.FC = () => {
   );
 
   const sectionRefs = [
+    useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
     useRef<HTMLDivElement>(null),
@@ -868,6 +871,39 @@ const App: React.FC = () => {
             animation={batch(Fade(), Sticky(102, 70))}
           >
             <img src={img33} className="w-40 h-auto -rotate-1" alt="" />
+          </Animator>
+        </ScrollPage>
+      </section>
+      <Spacer />
+      {/* and the rest? */}
+      <section ref={sectionRefs[20]} id="section21">
+        <ScrollPage>
+          <Animator
+            className="container w-11/12 max-w-sm"
+            animation={batch(Fade(), Sticky(50, 50))}
+          >
+            <span ref={typingRef20}>
+              {intersecting[19] && (
+                <TypeAnimation
+                  sequence={[
+                    "Have you found your home?",
+                    1000,
+                    "no?",
+                    1000,
+                    "come join us then",
+                    1000,
+                    "You're always welcome here",
+                    2000,
+                    "Welcome Home",
+                  ]}
+                  speed={1}
+                  wrapper="span"
+                  cursor={false}
+                  repeat={0}
+                  className=" whitespace-pre-line"
+                />
+              )}
+            </span>
           </Animator>
         </ScrollPage>
       </section>
