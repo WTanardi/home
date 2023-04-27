@@ -800,7 +800,7 @@ const App: React.FC = () => {
         </ScrollPage>
       </section>
       <Spacer />
-      {/* IG chat */}
+      {/* Pic Section 3 */}
       <section ref={sectionRefs[19]} id="section20">
         <ScrollPage>
           <Animator
