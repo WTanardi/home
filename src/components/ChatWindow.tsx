@@ -1,9 +1,9 @@
 import ChatBubble from "./ChatBubble";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowLeft } from "@fortawesome/free-solid-svg-icons";
-import firstImage from "../assets/img/ultah.jpg";
-import secondImage from "../assets/img/poster.jpg";
-import avatarImage from "../assets/img/avatar.jpg";
+import firstImage from "../assets/img/ultah.png";
+import secondImage from "../assets/img/poster.png";
+import avatarImage from "../assets/img/avatar.png";
 
 const ChatWindow = () => {
   return (
