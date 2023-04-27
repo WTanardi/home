@@ -1,5 +1,5 @@
 import React from "react";
-import avatarImage from "../assets/img/avatar.jpg";
+import avatarImage from "../assets/img/avatar.png";
 
 interface ChatBubbleProps {
   content: string;

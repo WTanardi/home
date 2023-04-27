@@ -908,7 +908,7 @@ const App: React.FC = () => {
         </ScrollPage>
       </section>
       {/* Scroll Buttons */}
-      <div className="w-full fixed bottom-32 left-1/2 transform -translate-x-1/2">
+      <div className="w-full fixed bottom-24 left-1/2 transform -translate-x-1/2">
         <button
           disabled={currentSectionIndex === 0}
           onClick={() => handleClick(currentSectionIndex - 1)}
